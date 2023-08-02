@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/samachar/static/js/main.508502d1.js",
+    "static/media/Sample.jpg": "/samachar/static/media/Sample.d8da792189d7944a741a.jpg",
+    "index.html": "/samachar/index.html",
+    "main.508502d1.js.map": "/samachar/static/js/main.508502d1.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.508502d1.js"
+  ]
+}
