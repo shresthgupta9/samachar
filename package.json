@@ -1,6 +1,6 @@
 {
   "homepage": "https://shresthgupta9.github.io/samachar",
-  "name": "my-app",
+  "name": "news-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
