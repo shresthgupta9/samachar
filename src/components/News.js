@@ -7,8 +7,10 @@ export default function News(props) {
     const [news, setNews] = useState({})
     const [page, setPage] = useState(1)
 
+    console.log(process.env.REACT_APP_NEWS_API_KEY);
+
     useEffect(() => {
-        fetch(`https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=9f76ddd1d1184159a477f94fa35493bd&page=${page}&pageSize=12`)
+        fetch(`https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=${process.env.REACT_APP_NEWS_API_KEY}&page=${page}&pageSize=12`)
             .then((response) => response.json())
             .then((jsonData) => {
                 setNews(jsonData)
@@ -16,7 +18,6 @@ export default function News(props) {
     }, [props.category, page])
 
     let totalResults = news.totalResults;
-    // console.log(totalResults);
 
     const prevChanger = () => {
         if (page > 1) { setPage(page - 1); }
