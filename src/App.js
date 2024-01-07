@@ -2,7 +2,7 @@ import Navbar from './components/Navbar';
 import News from './components/News';
 import Footer from './components/Footer';
 import {
-  HashRouter,
+  BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App" style={{ backgroundColor: "#fafafa" }}>
-      <HashRouter>
+      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<News category="general" />} />
@@ -24,7 +24,7 @@ function App() {
           <Route path="/technology" element={<News category="technology" />} />
         </Routes>
         <Footer />
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
